@@ -34,9 +34,19 @@ html
     // STYLES END
 
     block styles
+      // STYLES
+      // STYLES END
 
-  body
+  body(data-ng-app='Twitter')
     block body
+
+      script(src="./vendor/jquery/dist/jquery.min.js")
+      script(src="./vendor/bootstrap/dist/css/bootstrap.min.css")
+      script(src="./vendor/angular/angular.min.js")
+      script(src="./vendor/angular-route/angular-route.min.js")
+      script(src="./vendor/angular-resource/angular-resource.min.js")
+
+
 
     //-
       Client-side Templates
@@ -59,7 +69,7 @@ html
             stringfile before they're served.
 
     // TEMPLATES
-    
+
     // TEMPLATES END
 
     //-
@@ -84,5 +94,6 @@ html
 
     // SCRIPTS
     script(src="/js/dependencies/sails.io.js")
+    script(src="/js/app/module.js")
     // SCRIPTS END
 
